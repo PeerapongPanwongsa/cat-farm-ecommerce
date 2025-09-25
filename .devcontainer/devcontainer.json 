@@ -1,0 +1,11 @@
+{
+  "name": "Cat Farm Full-Stack Project",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "backend",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "cd backend && go mod tidy && cd ../frontend && npm install"
+}
